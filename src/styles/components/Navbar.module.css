@@ -1,0 +1,48 @@
+.container{
+    background: var(--backgroundNav);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo span{
+    font-family: 'Courier New', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--title);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem ;
+}
+.logo span:hover{
+    transform: scale(1.2);
+
+}
+
+.menu{
+    display: flex;
+}
+.menuItens{
+    font-family: 'Courier New', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.itens{
+    color: var(--title);
+    padding: 0.5rem;
+    padding-bottom:0.2rem;
+    margin: auto 0.5rem;
+    list-style: none;
+}
+.itens:hover{
+    transform: scale(1.2);
+    border-bottom: 0.5px solid var(--title);
+    border-radius: 40%;
+}
