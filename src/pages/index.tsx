@@ -1,9 +1,14 @@
-import {Navbar} from '../components/Navbar'
+import {Navbar} from '../components/Navbar';
+import {Presentation} from '../components/Presentation';
+
 export default function Home() {
   return (
     <div >
       <Navbar/>
-      <h1>Heelo Word</h1>
+      <Presentation/>
+      {/* {/* <Presentation/> */}
+      {/* <Presentation/>  */}
+
     </div>
   )
 }

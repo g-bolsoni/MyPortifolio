@@ -1,33 +1,53 @@
 // import Image from 'next/image'
-
+import React, {useState} from 'react';
 import styles from '../styles/components/Navbar.module.css';
+import Image from 'next/image'
 
 // Importar imagem
 
 export function Navbar(){
+    const [iconMenu, setIconMenu] = useState('');
+
+
     return(
         <header className={styles.container} >
-            <div className={styles.logo}>
-            {/* <Image
-                className={styles.image}
-                src="/Logo.svg"
-                alt="Dev Giovane"
-                width={50}
-                height={50}
-            /> */}
-            <span>Logo</span>
+            <h1 className={styles.navTitle}>
+                <a href="#" title="MyBlog">My Blog</a>
+            </h1>
+            <a className={styles.iconMenu}
+                // onClick={(e)=>{
+                //     if(window.innerWidth == 1199){
 
-            </div>
+                //     }
+                // }}
+            >
+                <Image 
+                src="/menu.svg"
+                alt="Menu"
+                width={30}
+                height={30}
+            />
+            </a>
             
-            <div className={styles.menu}>
-                <ul className={styles.menuItens}>
-                    <li className={styles.itens}>Intro </li>
-                    <li className={styles.itens}>What I Do</li>
-                    <li className={styles.itens}>Who I Am</li>
-                    <li className={styles.itens}>My Work</li>
-                    <li className={styles.itens}>Contact</li>
+            <nav className={styles.navbar}>
+                <ul className={styles.navbarItens}>
+                    <li>
+                        <a href="#Intro" title="Intro">Intro</a>
+                    </li>
+                    <li>
+                        <a href="#WhatIDo" title="WhatIDo">What I Do</a>
+                    </li>
+                    <li>
+                        <a href="#WhoIAm" title="WhoIAm">Who I Am</a>
+                    </li>
+                    <li>
+                        <a href="#MyWork" title="MyWork">My Work</a>
+                    </li>
+                    <li>
+                        <a href="#Contact" title="Contact">Contact</a>
+                    </li>
                 </ul>
-            </div>
+            </nav>
         </header>
     )
 }
