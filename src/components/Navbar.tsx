@@ -1,53 +1,28 @@
 // import Image from 'next/image'
 import React, {useState} from 'react';
 import styles from '../styles/components/Navbar.module.css';
-import Image from 'next/image'
 
 // Importar imagem
 
 export function Navbar(){
-    const [iconMenu, setIconMenu] = useState('');
-
+    // importconst [iconMenu, setIconMenu] = useState('');
 
     return(
-        <header className={styles.container} >
-            <h1 className={styles.navTitle}>
-                <a href="#" title="MyBlog">My Blog</a>
-            </h1>
-            <a className={styles.iconMenu}
-                // onClick={(e)=>{
-                //     if(window.innerWidth == 1199){
+        <header className={styles.header}>
+        <a className={styles.logo} href="#">Logo</a>
+        <nav className={styles.topnav} id={styles.myTopnav}>
+            <ul className={styles.listaUl}>
+                <li className={styles.listaLi}><a href="#Intro">Intro</a></li>
+                <li className={styles.listaLi}><a href="#whatido">What I Do</a></li>
+                <li className={styles.listaLi}><a href="#whoiam">Who I Am</a></li>
+                <li className={styles.listaLi}><a href="#mywork">My Work</a></li>
+                <li className={styles.listaLi}><a href="#contact">Contact</a></li>
 
-                //     }
-                // }}
-            >
-                <Image 
-                src="/menu.svg"
-                alt="Menu"
-                width={30}
-                height={30}
-            />
+            </ul>
+            <a href="javascript:void(0);" className="icon" >
+              <i className="fa fa-bars"></i>
             </a>
-            
-            <nav className={styles.navbar}>
-                <ul className={styles.navbarItens}>
-                    <li>
-                        <a href="#Intro" title="Intro">Intro</a>
-                    </li>
-                    <li>
-                        <a href="#WhatIDo" title="WhatIDo">What I Do</a>
-                    </li>
-                    <li>
-                        <a href="#WhoIAm" title="WhoIAm">Who I Am</a>
-                    </li>
-                    <li>
-                        <a href="#MyWork" title="MyWork">My Work</a>
-                    </li>
-                    <li>
-                        <a href="#Contact" title="Contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        </nav>
+    </header>
     )
 }

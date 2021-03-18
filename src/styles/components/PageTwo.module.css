@@ -1,0 +1,79 @@
+/* ------------ Screen 1 ---------------*/
+.section{
+    background: url('/cbg2.jpg');
+    background-size:cover, contain, auto ;
+    background-attachment: fixed;
+    height:100vh;
+
+    display: flex;
+    flex-direction:column;  
+}
+.section .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-content: center;
+    align-items: flex-start;
+    
+    max-width:550px;
+    height: 40vh;
+    
+    position: absolute;
+    top: 25%;
+    right: 0px;
+
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px 0 0 10px;
+
+    text-align: justify;
+}
+.section .content #title{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+   color: #000;
+   font-weight: 600;
+
+   display: inline-block;
+   margin: 2.5rem 1.5rem 0; 
+    /* padding: 10px 40px; */
+
+  
+ }
+.section .content #description{
+    color: #000;
+    font-weight: 300;
+ 
+    margin: .5rem 1.5rem 0; 
+    padding-right:10px ;
+ 
+}
+
+.section #image{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    bottom: 0px;
+    left:46%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    padding: 15px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-bottom: none;
+    border-radius: 50% 50% 0 0  ;
+}
+#image:hover{
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+ /* -----X------- Screen 1 -------X-------*/
+ 

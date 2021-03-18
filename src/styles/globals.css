@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 :root{
   --title:#39454b;
@@ -29,8 +30,11 @@
 }
 
 body{
-  background-color:var(--background);
+  background-color:var(--backgroundNav);
   color: var(--text);
+  height: 100vh;
+  width: 100%;
+  
 }
 
 body, input, textarea, button{

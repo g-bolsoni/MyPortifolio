@@ -1,14 +1,17 @@
 import {Navbar} from '../components/Navbar';
-import {Presentation} from '../components/Presentation';
+import {PageOne} from '../components/PageOne';
+import {PageTwo} from '../components/PageTwo';
+
+
+import styles from '../styles/pages/Home.module.css'
 
 export default function Home() {
   return (
-    <div >
+    <div className={styles.container}>
       <Navbar/>
-      <Presentation/>
-      {/* {/* <Presentation/> */}
-      {/* <Presentation/>  */}
-
+      {/*<PageOne/>*/}
+      <PageTwo/>
+      
     </div>
   )
 }
